@@ -3,210 +3,123 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>关于嫩芽健康 | About Nenya Health</title>
-  <meta name="description" content="嫩芽健康（Nenya Health）是一家连接香港与深圳的跨境健康管理与就医管家机构，专注医生决策支持、跨境礼宾与长期健康管理。">
-  <meta property="og:title" content="About Nenya Health">
-  <meta property="og:description" content="Third-party health concierge bridging hospitals, patients, and families across Shenzhen & Hong Kong.">
-  <link rel="icon" type="image/png" href="./assets/logo-nenya-health.png">
-  <link rel="stylesheet" href="./styles.css?v=20240218">
+  <title>关于嫩芽健康｜Nenya Health</title>
+  <meta name="description" content="嫩芽健康由医疗专家主导，提供深港跨境健康管家服务。">
+  <link rel="icon" type="image/png" href="./assets/favicon.png">
+  <link rel="stylesheet" href="./styles.css?v=20240219">
 </head>
-<body>
-  <header>
-    <div class="topbar">
-      <a class="logo-lockup" href="./index.html">
-        <img src="./assets/logo-nenya.svg" alt="Nenya Health logo">
+<body class="about-page">
+  <header class="site-header" data-header>
+    <div class="brand">
+      <a href="./index.html" aria-label="Nenya Health">
+        <img src="./assets/logo-nenya.svg" alt="Nenya Health logo" height="40">
       </a>
-      <nav>
-        <a href="./index.html">首页 Home</a>
-        <a href="./services.html">服务 Services</a>
-        <a href="./about.html" class="active">关于 About</a>
-      </nav>
-      <div class="top-actions">
-        <a class="btn btn-ghost" href="./services.html">查看服务</a>
-        <a class="btn btn-primary" href="#contact">预约沟通</a>
+    </div>
+    <nav class="primary-nav" aria-label="Primary navigation">
+      <a href="./index.html" data-i18n="navHome" data-nav-link="home">首页</a>
+      <a href="./index.html#services" data-i18n="navServices" data-nav-link="services">服务</a>
+      <a href="./about.html" data-i18n="navAbout" data-nav-link="about" class="is-active">关于</a>
+    </nav>
+    <div class="header-controls">
+      <div class="lang-dropdown" data-lang-menu>
+        <button class="lang-trigger" type="button" aria-haspopup="true" aria-expanded="false">
+          <span data-current-lang>简体中文</span>
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <ul class="lang-menu">
+          <li><button type="button" data-lang-option="zh">简体中文</button></li>
+          <li><button type="button" data-lang-option="yue">粵語</button></li>
+          <li><button type="button" data-lang-option="en">English</button></li>
+        </ul>
       </div>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" data-nav-toggle>
+        <span></span><span></span>
+      </button>
     </div>
   </header>
 
-  <main>
-    <section class="hero reveal">
-      <div class="halo"></div>
+  <main class="about-layout">
+    <section class="hero about-hero">
       <div class="hero-grid">
-        <div>
-          <span class="badge">About Nenya Health</span>
-          <h1>我们是谁 · Who We Are</h1>
-          <p class="hero-lede bilingual">
-            <span>嫩芽健康（Nenya Health）是一家连接香港与深圳的跨境健康管理与就医管家服务机构。我们不替代医院诊疗，而是作为医院—患者—家庭之间的第三方健康管家与决策助手，依托专业医生顾问与健康管理团队，为香港居民及中高端家庭提供从就医导航、陪诊协同、体检管理、报告解读到长期随访的全链路服务。我们的目标是让跨境就医更省心、更可控，让每一次检查与就诊都沉淀为可持续的健康管理方案。</span>
-            <span class="en">We are a cross-border health concierge connecting Shenzhen and Hong Kong. Nenya Health does not replace clinical care; we act as a third-party steward between hospitals, patients, and families. A physician advisory board and bilingual health managers coordinate navigation, escort, check-ups, report interpretation, and longitudinal follow-up. We turn each visit into a durable health asset.</span>
-          </p>
-          <div class="hero-ctas">
-            <a class="btn btn-primary" href="#contact">联系 Contact</a>
-            <a class="btn btn-ghost" href="./services.html">查看服务 Services</a>
-          </div>
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="aboutHeroTitle">关于我们</p>
+          <h1 data-i18n="aboutHeroSubtitle">医疗专家主导、深圳与香港协同的跨境健康管家团队。</h1>
+          <p data-i18n="aboutBody">嫩芽健康是一家连接香港与深圳的跨境医疗健康管家机构。我们不替代诊疗，而是作为医疗专家团队延伸，提供路径规划、陪同执行、资料管理与长期追踪，让家庭在两地就医时保持同频、安心。</p>
         </div>
-        <div class="hero-visual" data-parallax="0.08">
-          <img src="https://images.unsplash.com/photo-1527613426441-4da17471b66d?auto=format&fit=crop&w=1200&q=80&fm=webp" alt="团队协同讨论健康方案" loading="lazy">
-          <div class="gloss"></div>
-          <div class="caption">Doctor Advisory Board · 深港双语团队</div>
-        </div>
+        <figure class="hero-media">
+          <img src="./assets/images/about-team.jpg" alt="医疗专家团队讨论" loading="lazy">
+        </figure>
       </div>
     </section>
 
-    <section class="section reveal" id="mission">
-      <div class="halo"></div>
-      <h2>我们的定位 Mission</h2>
-      <div class="card-grid">
-        <div class="card">
-          <h3>第三方健康管家</h3>
-          <p class="bilingual"><span>站在客户一侧协调医生、医院与家属，保持信息透明。</span><span class="en">Stand on the client side to coordinate clinicians, hospitals, and family with transparency.</span></p>
-        </div>
-        <div class="card">
-          <h3>跨境连接员</h3>
-          <p class="bilingual"><span>熟悉深港制度、预约逻辑与文化差异，提前规划节奏。</span><span class="en">Fluent in HK & SZ systems, schedules, and nuances for calm cadence planning.</span></p>
-        </div>
-        <div class="card">
-          <h3>长期陪伴者</h3>
-          <p class="bilingual"><span>把一次次检查转化为连续的档案、提醒与复盘。</span><span class="en">Transform every encounter into living archives, reminders, and reviews.</span></p>
-        </div>
+    <section class="section">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="aboutBioTitle">我们相信</p>
+      </div>
+      <ul class="about-list">
+        <li data-i18n="aboutBio1">跨境就医需要专业翻译者：在医疗专家语言与家庭顾虑之间取得平衡。</li>
+        <li data-i18n="aboutBio2">节奏管理与资料留痕与诊断同样重要，决定体验与安全。</li>
+        <li data-i18n="aboutBio3">隐私与合规是长期合作的底线，所有沟通都加密留存。</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="aboutMissionTitle">团队结构</p>
+      </div>
+      <div class="mission-grid">
+        <article>
+          <p data-i18n="aboutMission1">医疗专家顾问团（内科、外科、儿科、影像等）。</p>
+        </article>
+        <article>
+          <p data-i18n="aboutMission2">跨境客户成功团队，覆盖粤语 / 普通话 / 英语。</p>
+        </article>
+        <article>
+          <p data-i18n="aboutMission3">资料运营与技术支持，维持健康档案与提醒系统。</p>
+        </article>
       </div>
     </section>
 
-    <section class="section reveal" id="method">
-      <div class="halo"></div>
-      <h2>我们怎么做 · Methodology</h2>
-      <p class="lead bilingual"><span>四个模块 + 服务边界。</span><span class="en">Four modules plus clear service boundaries.</span></p>
-      <div class="flow-steps">
-        <div class="flow-step" data-step="01">
-          <strong>Intake 需求评估</strong>
-          <p class="bilingual"><span>访谈、资料核实、风险提醒、优先级排序。</span><span class="en">Interviews, record validation, risk alerts, and priority mapping.</span></p>
-        </div>
-        <div class="flow-step" data-step="02">
-          <strong>Match 匹配</strong>
-          <p class="bilingual"><span>医院 / 科室 / 医生筛选，多方案比对与预期管理。</span><span class="en">Select hospitals, departments, and doctors with expectation management.</span></p>
-        </div>
-        <div class="flow-step" data-step="03">
-          <strong>Deliver 交付</strong>
-          <p class="bilingual"><span>陪诊、体检、取报告、家属同步、医患沟通支援。</span><span class="en">Escort visits, check-ups, report pick-up, and mediate communications.</span></p>
-        </div>
-        <div class="flow-step" data-step="04">
-          <strong>Follow 复盘</strong>
-          <p class="bilingual"><span>报告解读、档案沉淀、随访提醒、下一步任务。</span><span class="en">Interpretation, archiving, follow-up reminders, and next tasks.</span></p>
-        </div>
+    <section class="section contact-section" id="contact">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="contactTitle">联系方式</p>
       </div>
-      <div class="service-boundary" style="margin-top:32px;">
-        <h3>服务边界 Service Boundaries</h3>
-        <ul>
-          <li class="bilingual"><span>不替代医生诊断或治疗；所有临床决策由医生与客户共同确认。</span><span class="en">We never replace licensed physicians; decisions are made jointly with them.</span></li>
-          <li class="bilingual"><span>不承诺疗效，不提供监管外医疗建议。</span><span class="en">No outcome guarantees or off-regulation advice.</span></li>
-          <li class="bilingual"><span>紧急或生命威胁情况请立刻前往急症室 / 拨打 999 或 120。</span><span class="en">In emergencies, head to A&E or call 999 / 120 immediately.</span></li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section reveal" id="clients">
-      <div class="halo"></div>
-      <h2>我们服务谁 · Who We Serve</h2>
-      <div class="persona-grid">
-        <div class="persona-card">
-          <h3>港人中产 / 高净值客户 <small class="en">Affluent HK clients</small></h3>
-          <ul>
-            <li class="bilingual"><span>遇到跨境就医、专家 second opinion。</span><span class="en">Facing cross-border visits or second opinions.</span></li>
-            <li class="bilingual"><span>希望流程有序且保密。</span><span class="en">Need orderly, discreet flow.</span></li>
-          </ul>
-        </div>
-        <div class="persona-card">
-          <h3>港人长者 / 慢病患者 <small class="en">Seniors & chronic cases</small></h3>
-          <ul>
-            <li class="bilingual"><span>需要陪诊协同与家庭随访提醒。</span><span class="en">Require escort coordination and family follow-up alerts.</span></li>
-            <li class="bilingual"><span>需兼顾深港双地的复诊节奏。</span><span class="en">Need cadence across both cities.</span></li>
-          </ul>
-        </div>
-        <div class="persona-card">
-          <h3>深港中高端家庭 <small class="en">Dual-city families</small></h3>
-          <ul>
-            <li class="bilingual"><span>2–4 人家庭年度规划。</span><span class="en">Annual programs for 2–4 members.</span></li>
-            <li class="bilingual"><span>以家庭医生视角统筹资料。</span><span class="en">Desire family doctor view of records.</span></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section reveal" id="contact">
-      <div class="halo"></div>
-      <h2>联系我们 · Contact</h2>
-      <div class="contact-panel">
+      <div class="about-grid">
         <div class="contact-card">
-          <h3>联系渠道</h3>
-          <div class="method">
-            <strong>邮箱 Email</strong>
-            <span>hello@nenya.health</span>
-            <div class="copy-pill">
-              <span>hello@nenya.health</span>
-              <button data-copy="hello@nenya.health">复制 Copy</button>
+          <dl>
+            <div>
+              <dt data-i18n="contactEmailLabel">邮箱</dt>
+              <dd><a href="mailto:hello@nenya.health" data-i18n="contactEmailValue">hello@nenya.health</a></dd>
             </div>
-          </div>
-          <div class="method">
-            <strong>WhatsApp</strong>
-            <span>+852 5123 6608</span>
-            <div class="copy-pill">
-              <span>+852 5123 6608</span>
-              <button data-copy="+85251236608">复制 Copy</button>
+            <div>
+              <dt data-i18n="contactPhoneLabel">WhatsApp</dt>
+              <dd><a href="https://wa.me/85251236608" target="_blank" rel="noopener" data-i18n="contactPhoneValue">+852 5123 6608</a></dd>
             </div>
-          </div>
-          <div class="method">
-            <strong>地址 Locations</strong>
-            <span>深圳 · 福田｜香港 · 中环（预约制私密会面 / By appointment）</span>
-          </div>
-          <div class="method">
-            <strong>工作时间</strong>
-            <span>Mon–Sun 09:00–21:00（紧急情况请说明）</span>
-          </div>
+            <div>
+              <dt data-i18n="contactOfficeLabel">预约面谈</dt>
+              <dd data-i18n="contactOfficeValue">深圳·福田｜香港·中环（预约制）</dd>
+            </div>
+            <div>
+              <dt data-i18n="contactHoursLabel">服务时间</dt>
+              <dd data-i18n="contactHoursValue">Mon – Sun · 09:00 – 21:00</dd>
+            </div>
+          </dl>
         </div>
-        <div class="contact-card">
-          <h3>微信 / WeChat</h3>
-          <div class="qr-block">
-            <img src="./assets/qrcode.svg" alt="微信二维码" loading="lazy">
-            <p class="bilingual"><span>扫码添加「嫩芽健康」客服微信，备注：跨境健康</span><span class="en">Scan to add “Nenya Health” on WeChat (note: Cross-border Health).</span></p>
-          </div>
-          <p class="disclaimer bilingual"><span>所有沟通默认加密 / 留痕，签署保密协议后再共享敏感资料。</span><span class="en">All channels are logged/encrypted and NDAs precede sensitive data sharing.</span></p>
+        <div class="qr-block">
+          <img src="./assets/qrcode.svg" alt="WeChat 联系二维码" loading="lazy">
+          <p data-i18n="contactQRNote">微信扫码：嫩芽健康｜备注跨境健康</p>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="footer-grid">
-      <div>
-        <img src="./assets/logo-nenya.svg" alt="Nenya Health logo">
-        <p>嫩芽健康 · Nenya Health<br>Cross-border Health Concierge.</p>
-      </div>
-      <div>
-        <strong>导航</strong>
-        <ul>
-          <li><a href="./index.html">首页 Home</a></li>
-          <li><a href="./services.html">服务 Services</a></li>
-          <li><a href="./about.html">关于 About</a></li>
-        </ul>
-      </div>
-      <div>
-        <strong>联系</strong>
-        <ul>
-          <li>hello@nenya.health</li>
-          <li>WhatsApp +852 5123 6608</li>
-          <li>WeChat｜扫码二维码</li>
-        </ul>
-      </div>
+    <div>
+      <img src="./assets/logo-mark.svg" alt="Nenya Health" height="36">
+      <p data-i18n="footerCopy">© 2024 嫩芽健康 Nenya Health · Cross-border Health Concierge</p>
     </div>
   </footer>
 
-  <div class="floating-contact" data-contact>
-    <button type="button">WhatsApp / 微信</button>
-    <div class="floating-card">
-      <p><strong>WhatsApp</strong><br>+852 5123 6608</p>
-      <p><strong>WeChat</strong><br>扫描二维码添加：嫩芽健康</p>
-    </div>
-  </div>
-
-  <script src="./script.js?v=20240218"></script>
+  <script src="./script.js?v=20240219" defer></script>
 </body>
 </html>
