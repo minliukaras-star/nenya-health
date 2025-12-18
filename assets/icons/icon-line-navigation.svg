@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="就医导航 icon">
+  <g fill="none" stroke="#0f6d9b" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M32 10 C23 10 16 17 16 26 C16 36 25 46 32 54 C39 46 48 36 48 26 C48 17 41 10 32 10 Z" opacity="0.9"/>
+    <circle cx="32" cy="27" r="6"/>
+    <path d="M8 52 L20 44" opacity="0.5"/>
+    <path d="M56 52 L44 44" opacity="0.5"/>
+  </g>
+</svg>

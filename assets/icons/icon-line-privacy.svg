@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="隐私合规 icon">
+  <g fill="none" stroke="#0f6d9b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M32 8 L50 14 V30 C50 42 42 52 32 56 C22 52 14 42 14 30 V14 Z"/>
+    <rect x="24" y="26" width="16" height="14" rx="6"/>
+    <path d="M28 26 V22 C28 18 30 16 32 16 C34 16 36 18 36 22 V26"/>
+  </g>
+</svg>
