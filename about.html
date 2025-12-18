@@ -4,12 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>嫩芽健康 | 关于</title>
-  <link rel="stylesheet" href="./styles.css?v=20241217-1">
+  <meta name="description" content="关于嫩芽健康 — 深港跨境医疗与家庭健康管理顾问。我们以资料—路径—协同—复盘的方法，为家庭提供长期且合规的健康管理。">
+  <meta property="og:title" content="关于嫩芽健康">
+  <meta property="og:description" content="深港跨境医疗与家庭健康管理顾问 — 私密、专业、长期的健康管理策略与执行。">
+  <link rel="stylesheet" href="./styles.css?v=20251218-1">
 </head>
 <body>
   <header>
     <div class="topbar">
-      <div class="brand">NENYA HEALTH</div>
+      <div class="brand"><img src="./assets/logo-nenya.svg" alt="NENYA HEALTH" class="logo" /></div>
       <nav>
         <a href="./index.html" data-i18n="navHome">首页</a>
         <a href="./services.html" data-i18n="navServices">服务</a>
@@ -21,7 +24,7 @@
           <button data-lang="yue">粵</button>
           <button data-lang="en">EN</button>
         </div>
-        <a class="btn-primary" href="./contact.html" data-i18n="contactButton">联络我们</a>
+        <a class="btn-primary" href="./about.html#contact" data-i18n="contactButton">联络我们</a>
       </div>
     </div>
   </header>
@@ -33,7 +36,7 @@
         <p data-i18n="aboutHeroDesc">深港跨境医疗与家庭健康管理顾问。以专业方法、长期视角与多语言沟通，为高净值家庭提供稳健方案。</p>
         <div class="hero-actions">
           <a class="btn-secondary" href="./services.html" data-i18n="navServices">服务</a>
-          <a class="btn-primary" href="./contact.html" data-i18n="contactButton">联络我们</a>
+          <a class="btn-primary" href="#contact" data-i18n="contactButton">预约私密沟通</a>
         </div>
       </div>
     </section>
@@ -52,20 +55,41 @@
       </div>
     </section>
 
+    <section id="contact" class="section contact-card" aria-labelledby="contactHeading">
+      <h2 id="contactHeading">联络与预约</h2>
+      <div class="contact-layout">
+        <div>
+          <h3 data-i18n="contactEmailLabel">邮箱</h3>
+          <p class="muted">hello@nenya.health</p>
+          <p class="muted" data-i18n="contactRegions">服务地区：深圳 · 香港 · 跨境</p>
+          <div class="copy-row">
+            <span>hello@nenya.health</span>
+            <button data-copy="hello@nenya.health" data-copied-label="Copied" data-i18n="contactCopy">复制邮箱</button>
+          </div>
+          <p class="disclaimer" data-i18n="contactDisclaimer">免责声明：嫩芽健康提供健康管理与协调服务，不替代诊断、不承诺疗效；医疗决策需由执业医生与客户共同确认。</p>
+          <p class="muted" style="margin-top:12px">地址（预约）：深圳·福田 / 香港·中环（可预约私密会面）</p>
+        </div>
+        <div class="qr-panel">
+          <img src="./assets/qrcode.svg" alt="二维码" />
+          <p class="muted">扫码添加「嫩芽健康」｜预约私密沟通</p>
+        </div>
+      </div>
+    </section>
+
     <div class="contact-strip">
       <div>
         <h3 data-i18n="contactStripTitle">扫码添加「嫩芽健康」｜预约私密沟通</h3>
         <p class="meta" data-i18n="contactStripDesc">联络入口始终开放，所有沟通以隐私与合规为前提。</p>
       </div>
       <div class="contact-strip-actions">
-        <a class="btn-primary" href="./contact.html" data-i18n="contactStripCTA">前往联系页</a>
+        <a class="btn-primary" href="#contact" data-i18n="contactStripCTA">预约私密沟通</a>
       </div>
       <div class="qrcode">
-        <img src="./assets/qrcode.png" alt="二维码" />
+        <img src="./assets/qrcode.svg" alt="二维码" />
       </div>
     </div>
   </main>
 
-  <script src="./script.js?v=20241217-1"></script>
+  <script src="./script.js?v=20251218-1"></script>
 </body>
 </html>
