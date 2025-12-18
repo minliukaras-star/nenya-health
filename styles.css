@@ -487,3 +487,23 @@ main {
   .topbar { padding: 14px 16px; }
   .section { padding: 32px; }
 }
+
+/* Logo */
+.brand .logo { height: 28px; display: block; }
+
+/* Reveal animations */
+.reveal { opacity: 0; transform: translateY(10px); transition: opacity 420ms ease, transform 420ms ease; will-change: transform, opacity; }
+.reveal.in-view { opacity: 1; transform: translateY(0); }
+
+/* Parallax helper */
+[data-parallax] { transform: translateZ(0); transition: transform 0.18s linear; }
+
+/* Button subtle gradient flow on hover */
+.btn-primary { position: relative; overflow: hidden; }
+.btn-primary::after { content: ''; position: absolute; inset: -40% -40%; background: linear-gradient(120deg, rgba(162,190,255,0.06), rgba(255,255,255,0.03)); transform: translateX(-40%); transition: transform 520ms cubic-bezier(.2,.9,.2,1); pointer-events: none; }
+.btn-primary:hover::after { transform: translateX(0%); }
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .reveal, [data-parallax], .btn-primary::after { transition: none !important; transform: none !important; }
+}

@@ -260,3 +260,49 @@ document.addEventListener('DOMContentLoaded', () => {
   setupLanguage();
   setupCopy();
 });
+
+/* ===== Animations & Parallax (native, motion-safe) ===== */
+function setupRevealObserver() {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in-view');
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+}
+
+function setupParallax() {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const els = Array.from(document.querySelectorAll('[data-parallax]'));
+  if (!els.length) return;
+  let ticking = false;
+  function onScroll() {
+    if (ticking) return; ticking = true;
+    requestAnimationFrame(() => {
+      const y = window.scrollY;
+      els.forEach(el => {
+        const depth = parseFloat(el.dataset.parallax) || 0.12;
+        el.style.transform = `translateY(${(y * depth).toFixed(2)}px)`;
+      });
+      ticking = false;
+    });
+  }
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+}
+
+function pageTransitionIn() {
+  if (document.documentElement.classList.contains('no-transitions')) return;
+  document.documentElement.style.opacity = 0;
+  requestAnimationFrame(() => { document.documentElement.style.transition = 'opacity 420ms ease'; document.documentElement.style.opacity = 1; });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  setupRevealObserver();
+  setupParallax();
+  pageTransitionIn();
+});
