@@ -3,118 +3,318 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>嫩芽健康 | Concierge 服务菜单</title>
-  <meta name="description" content="嫩芽健康 Concierge 服务｜跨境健康管理组合。定制化服务，私密沟通确认细节。">
-  <meta property="og:title" content="嫩芽健康 | Concierge 服务菜单">
-  <meta property="og:description" content="定制服务套件：路径、跨境礼宾、专家协调、体检管理、报告整理、年度守护。">
-  <link rel="stylesheet" href="./styles.css?v=20251218-1">
+  <title>嫩芽健康｜跨境医疗服务体系</title>
+  <meta name="description" content="嫩芽健康 | 单次礼宾（就医陪诊包 / 体检+解读包）+ 年度家庭医生会员（个人 / 小家庭 / VIP），配套交付物、时长与参考定价。">
+  <meta property="og:title" content="Nenya Health Services">
+  <meta property="og:description" content="Cross-border concierge and annual stewardship memberships for Shenzhen & Hong Kong families.">
+  <link rel="icon" type="image/png" href="./assets/logo-nenya-health.png">
+  <link rel="stylesheet" href="./styles.css?v=20240218">
 </head>
 <body>
   <header>
     <div class="topbar">
-      <div class="brand"><img src="./assets/logo-nenya.svg" alt="NENYA HEALTH" class="logo" /></div>
+      <a class="logo-lockup" href="./index.html">
+        <img src="./assets/logo-nenya.svg" alt="Nenya Health logo">
+      </a>
       <nav>
-        <a href="./index.html" data-i18n="navHome">首页</a>
-        <a href="./services.html" class="active" data-i18n="navServices">服务</a>
-        <a href="./about.html" data-i18n="navAbout">关于</a>
+        <a href="./index.html">首页 Home</a>
+        <a href="./services.html" class="active">服务 Services</a>
+        <a href="./about.html">关于 About</a>
       </nav>
-      <div class="actions">
-        <div class="lang-switch">
-          <button data-lang="zh" class="active">ZH</button>
-          <button data-lang="yue">粵</button>
-          <button data-lang="en">EN</button>
-        </div>
-        <a class="btn-primary" href="./about.html#contact" data-i18n="contactButton">联络我们</a>
+      <div class="top-actions">
+        <a class="btn btn-ghost" href="./index.html#workflow">了解方法</a>
+        <a class="btn btn-primary" href="./about.html#contact">咨询与联系</a>
       </div>
     </div>
   </header>
 
   <main>
-    <section class="hero" style="background-image: linear-gradient(120deg, rgba(234, 242, 255, 0.95), rgba(214, 228, 255, 0.85)), url('./assets/bg-menu-ornament.svg');">
-      <div class="hero-content">
-        <p class="banner-small" data-i18n="servicesHeroNote">所有服务均为定制组合，详情以私密沟通为准。</p>
-        <h1 data-i18n="servicesHeroTitle">Concierge Menu｜跨境健康管理组合</h1>
-        <div class="hero-actions">
-          <a class="btn-secondary" href="./about.html" data-i18n="navAbout">关于</a>
-          <a class="btn-primary" href="./about.html#contact" data-i18n="contactButton">联络我们</a>
+    <section class="hero reveal">
+      <div class="halo"></div>
+      <div class="hero-grid">
+        <div>
+          <span class="badge">Concierge Menu</span>
+          <h1>跨境医疗服务体系</h1>
+          <p class="hero-lede bilingual">
+            <span>所有服务均为定制组合，以下为标准化交付清单，最终方案以私密沟通确认。</span>
+            <span class="en">Each engagement is bespoke; below outlines typical scope, deliverables, timelines, and reference ranges.</span>
+          </p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#single">单次礼宾 Single</a>
+            <a class="btn btn-ghost" href="#annual">年度会员 Annual</a>
+          </div>
+        </div>
+        <div class="hero-visual" data-parallax="0.08">
+          <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80&fm=webp" alt="医疗礼宾在现代医院陪诊" loading="lazy">
+          <div class="gloss"></div>
+          <div class="caption">深港医院陪诊现场 · Medical Concierge In Action</div>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="texture-bg"></div>
-      <div class="service-grid">
-        <div class="service-card">
-          <img class="icon" src="./assets/icon-service-pathway.svg" alt="Pathway" />
-          <div>
-            <h3 data-i18n="serviceAName">A Pathway Advisory</h3>
-            <p class="muted" data-i18n="serviceADesc">深港路径与决策支持，清晰解释“为何选择”。</p>
-            <div class="tags" data-i18n="serviceATags" data-i18n-html="true"><span>路径梳理</span><span>时间预估</span><span>备选方案</span></div>
-            <p class="light-note" data-i18n="serviceAScene">适用：首次跨境就医、方案比较时。</p>
+    <section class="section reveal" id="single">
+      <div class="halo"></div>
+      <h2>单次礼宾服务｜Single Engagement</h2>
+      <p class="lead bilingual">
+        <span>针对首次或阶段性需求：就医陪诊包、体检+专家解读包。均包含 WhatsApp / 微信 7×24 支持与服务边界提示。</span>
+        <span class="en">Task-based concierge: Escort Pack & Check-up Insight, both with 24/7 bilingual support.</span>
+      </p>
+
+      <div class="service-block" id="escort">
+        <div class="service-media" data-parallax="0.04">
+          <img src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&w=1200&q=80&fm=webp" alt="就医陪诊包服务配图" loading="lazy">
+        </div>
+        <div class="service-details">
+          <span class="badge">单次服务｜Single Engagement</span>
+          <h3>就医陪诊包 Concierge Escort <small>RMB 800–1,500 / 次（参考区间，按需求评估）</small></h3>
+          <p class="bilingual">
+            <span>适合首次来深圳就医、流程不熟的港人或需要跨境协调的家庭。我们负责节奏管理、信息同步与复盘输出。</span>
+            <span class="en">For first-time Shenzhen patients or families needing orchestration—we manage cadence, communication, and deliverables.</span>
+          </p>
+          <div class="service-meta">
+            <div>
+              <strong>适用人群｜Fit</strong>
+              <p class="bilingual"><span>首次跨境就医、慢病复诊、日间手术前后协调。</span><span class="en">Cross-border newcomers, chronic reviews, day-surgery prep.</span></p>
+            </div>
+            <div>
+              <strong>我们做什么｜Scope</strong>
+              <p class="bilingual"><span>线上预评估、挂号及路径设计、当日陪诊、信息同步。</span><span class="en">Virtual intake, booking & pathway design, on-site escort, family sync.</span></p>
+            </div>
+            <div>
+              <strong>交付物｜Outputs</strong>
+              <p class="bilingual"><span>就医小结、提问单、下一步提醒。</span><span class="en">Visit brief, question list, next-step cues.</span></p>
+            </div>
+            <div>
+              <strong>时长｜Timeline</strong>
+              <p class="bilingual"><span>前期准备 2–3 天 + 当次 1 天陪诊 + 72 小时内复盘。</span><span class="en">Prep 2–3 days + 1 day escort + recap within 72h.</span></p>
+            </div>
+          </div>
+          <details class="service-accordion" open>
+            <summary>我们怎么做 · Process</summary>
+            <ul>
+              <li class="bilingual"><span>线上深度 intake，整理既往报告、过敏史、期望与担忧。</span><span class="en">Virtual intake covering records, allergies, expectations.</span></li>
+              <li class="bilingual"><span>匹配深圳 / 香港医院科室与医生，设计候诊与检查节奏。</span><span class="en">Match HK/SZ facilities and choreograph waiting + diagnostics.</span></li>
+              <li class="bilingual"><span>陪诊当天协同登记、检验、影像、取药，实时同步家属。</span><span class="en">On-site escort handles registration, labs, imaging, pharmacy, family updates.</span></li>
+              <li class="bilingual"><span>72 小时内完成就医小结、下一步计划与风险提示。</span><span class="en">Deliver bilingual visit brief + next steps within 72 hours.</span></li>
+            </ul>
+          </details>
+          <div class="service-deliverables">
+            <div class="pill">就医小结 · Visit Brief</div>
+            <div class="pill">提问单 & Review Checklist</div>
+            <div class="pill">WhatsApp / 微信 7×24</div>
           </div>
         </div>
-        <div class="service-card">
-          <img class="icon" src="./assets/icon-service-concierge.svg" alt="Concierge" />
-          <div>
-            <h3 data-i18n="serviceBName">B Cross-border Concierge</h3>
-            <p class="muted" data-i18n="serviceBDesc">跨境就医礼宾协助，聚焦节奏管理与到诊准备。</p>
-            <div class="tags" data-i18n="serviceBTags" data-i18n-html="true"><span>行程节奏</span><span>候诊管理</span><span>家属协调</span></div>
-            <p class="light-note" data-i18n="serviceBScene">适用：深港往返、多方沟通需同步。</p>
-          </div>
+      </div>
+
+      <div class="service-block" id="checkup">
+        <div class="service-media" data-parallax="0.04">
+          <img src="https://images.unsplash.com/photo-1527613426441-4da17471b66d?auto=format&fit=crop&w=1200&q=80&fm=webp" alt="体检与专家解读服务配图" loading="lazy">
         </div>
-        <div class="service-card">
-          <img class="icon" src="./assets/icon-service-specialist.svg" alt="Specialist" />
-          <div>
-            <h3 data-i18n="serviceCName">C Specialist Coordination</h3>
-            <p class="muted" data-i18n="serviceCDesc">专家协调与预约协助，强调合规与预期管理。</p>
-            <div class="tags" data-i18n="serviceCTags" data-i18n-html="true"><span>专家筛选</span><span>预期管理</span><span>信息整合</span></div>
-            <p class="light-note" data-i18n="serviceCScene">适用：需要对齐期望而非承诺 100%。</p>
+        <div class="service-details">
+          <span class="badge">单次服务｜Single Engagement</span>
+          <h3>体检 + 专家解读包 Precision Insight <small>RMB 1,500–3,000 / 次（服务费，不含体检机构费用）</small></h3>
+          <p class="bilingual">
+            <span>从体检方案定制、陪检执行、30–60 分钟深度解读到年度健康报告，适合关注指标趋势与家庭档案的客户。</span>
+            <span class="en">Designed for clients focused on trend tracking—covering plan design, escort, deep dives, and annual dossiers.</span>
+          </p>
+          <div class="service-meta">
+            <div>
+              <strong>适用人群｜Fit</strong>
+              <p class="bilingual"><span>高管/家庭年度体检、专项筛查、术后随访。</span><span class="en">Executives/families for annual exams, specialty screenings, post-op reviews.</span></p>
+            </div>
+            <div>
+              <strong>我们负责｜Scope</strong>
+              <p class="bilingual"><span>方案设计、陪检动线、亲自记录指标、专家解读会议。</span><span class="en">Design protocols, escort through stations, capture metrics, host expert review.</span></p>
+            </div>
+            <div>
+              <strong>交付物｜Outputs</strong>
+              <p class="bilingual"><span>年度健康报告、指标趋势图、复诊提醒。</span><span class="en">Annual health report, trend dashboards, reminder plan.</span></p>
+            </div>
+            <div>
+              <strong>时长｜Timeline</strong>
+              <p class="bilingual"><span>前期 5–7 天评估；当次 1–2 天陪检；报告 1 周内交付。</span><span class="en">Planning 5–7 days; escort 1–2 days; report within 1 week.</span></p>
+            </div>
           </div>
-        </div>
-        <div class="service-card">
-          <img class="icon" src="./assets/icon-service-checkup.svg" alt="Diagnostics" />
-          <div>
-            <h3 data-i18n="serviceDName">D Diagnostics &amp; Check-up Curation</h3>
-            <p class="muted" data-i18n="serviceDDesc">体检与检查管理，确保资料、优先级与流程顺畅。</p>
-            <div class="tags" data-i18n="serviceDTags" data-i18n-html="true"><span>检查序列</span><span>结果跟进</span><span>差异解释</span></div>
-            <p class="light-note" data-i18n="serviceDScene">适用：年度体检、专项检查组合。</p>
-          </div>
-        </div>
-        <div class="service-card">
-          <img class="icon" src="./assets/icon-service-report.svg" alt="Report" />
-          <div>
-            <h3 data-i18n="serviceEName">E Report Curation &amp; Interpretation</h3>
-            <p class="muted" data-i18n="serviceEDesc">报告整理与专家解读，强调非诊断、提供决策语言。</p>
-            <div class="tags" data-i18n="serviceETags" data-i18n-html="true"><span>报告整理</span><span>复核与提问</span><span>二次沟通</span></div>
-            <p class="light-note" data-i18n="serviceEScene">适用：多家机构报告需要整合时。</p>
-          </div>
-        </div>
-        <div class="service-card">
-          <img class="icon" src="./assets/icon-service-stewardship.svg" alt="Stewardship" />
-          <div>
-            <h3 data-i18n="serviceFName">F Annual Family Stewardship</h3>
-            <p class="muted" data-i18n="serviceFDesc">年度家庭健康管理，持续复盘、提醒与资源协调。</p>
-            <div class="tags" data-i18n="serviceFTags" data-i18n-html="true"><span>家庭视角</span><span>长期陪伴</span><span>节奏管理</span></div>
-            <p class="light-note" data-i18n="serviceFScene">适用：需要稳定团队守护的家庭。</p>
+          <details class="service-accordion" open>
+            <summary>我们怎么做 · Process</summary>
+            <ul>
+              <li class="bilingual"><span>评估家族史与既往检查，设计差异化体检组合（深港均衡）。</span><span class="en">Analyze history to curate HK/SZ check-up mix.</span></li>
+              <li class="bilingual"><span>陪检当天协助加项、处理突发情况、记录医生口述重点。</span><span class="en">Escort handles add-ons, contingencies, and physician notes.</span></li>
+              <li class="bilingual"><span>安排 30–60 分钟专家解读，梳理“需关注 / 可观察 / 暂不处理”。</span><span class="en">Host 30–60 min interpretation to clarify action vs. watchlist.</span></li>
+              <li class="bilingual"><span>制作《年度健康报告》+ 报告解读录音 + 随访提醒。</span><span class="en">Deliver annual report, audio recap, and follow-up schedule.</span></li>
+            </ul>
+          </details>
+          <div class="service-deliverables">
+            <div class="pill">年度健康报告 · Annual Book</div>
+            <div class="pill">指标趋势仪表盘 · Trend Dashboard</div>
+            <div class="pill">随访提醒 & 解读录音</div>
           </div>
         </div>
       </div>
     </section>
 
-    <div class="contact-strip">
+    <section class="section reveal" id="annual">
+      <div class="halo"></div>
+      <h2>年度家庭医生会员｜Annual Stewardship</h2>
+      <p class="lead bilingual">
+        <span>三档会员制度覆盖个人、2–4 人家庭、高净值 VIP 会籍。基于年度节奏，包含家庭医生顾问团、绿色通道、健康档案运营。</span>
+        <span class="en">Three membership tiers for individuals, families, and VIP cohorts—anchored by doctor councils, fast lanes, and data operations.</span>
+      </p>
+
+      <div class="service-block" id="tier-a">
+        <div class="service-media" data-parallax="0.04">
+          <img src="https://images.unsplash.com/photo-1582719478250-08858b829646?auto=format&fit=crop&w=1200&q=80&fm=webp" alt="基础会员服务配图" loading="lazy">
+        </div>
+        <div class="service-details">
+          <span class="badge">年度会员｜Tier A</span>
+          <h3>基础跨境家庭医生会员（个人） <small>RMB 18,000 / 年 起</small></h3>
+          <p class="bilingual">
+            <span>适合需要稳定团队的个人客户，含季度健康会议、跨境就医协调与随访管理。</span>
+            <span class="en">For individuals who need a steady team, quarterly reviews, and concierge coordination.</span>
+          </p>
+          <div class="service-meta">
+            <div>
+              <strong>包含项目｜Scope</strong>
+              <p class="bilingual"><span>年度规划会 ×1、复盘会 ×2、陪诊积分、档案维护、快速问诊通道。</span><span class="en">Annual planning session, two reviews, escort credits, records upkeep, fast-track consults.</span></p>
+            </div>
+            <div>
+              <strong>交付物｜Outputs</strong>
+              <p class="bilingual"><span>个人健康仪表盘、年度健康报告、WhatsApp/微信 7×24。</span><span class="en">Personal dashboard, yearly report, 24/7 chat concierge.</span></p>
+            </div>
+            <div>
+              <strong>响应 SLA</strong>
+              <p class="bilingual"><span>工作日 2 小时内响应，周末 4 小时内。</span><span class="en">Response within 2h on weekdays, 4h on weekends.</span></p>
+            </div>
+          </div>
+          <div class="service-deliverables">
+            <div class="pill">客户成功经理 · Client Success</div>
+            <div class="pill">季度跨境会议 · Quarterly Reviews</div>
+            <div class="pill">绿色通道协调 · Fast Lane</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-block" id="tier-b">
+        <div class="service-media" data-parallax="0.04">
+          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80&fm=webp" alt="小家庭会员服务配图" loading="lazy">
+        </div>
+        <div class="service-details">
+          <span class="badge">年度会员｜Tier B</span>
+          <h3>高端家庭医生 / 小家庭会员（2–4 人） <small>RMB 38,000 / 年 起</small></h3>
+          <p class="bilingual">
+            <span>提供家庭维度的健康策略：成员画像、就诊优先级、跨境信息同步、随访提醒。</span>
+            <span class="en">Family-level strategy with personas, priority setting, cross-border updates, and reminders.</span>
+          </p>
+          <div class="service-meta">
+            <div>
+              <strong>包含项目｜Scope</strong>
+              <p class="bilingual"><span>家庭总控医生、每月健康例会、陪诊积分包、专家二次意见。</span><span class="en">Family lead physician, monthly huddles, escort credits, second opinions.</span></p>
+            </div>
+            <div>
+              <strong>交付物｜Outputs</strong>
+              <p class="bilingual"><span>家庭健康地图、差旅 / 校园 / 保险联动建议、关键指标告警。</span><span class="en">Family health map, travel/school/insurance guidance, KPI alerts.</span></p>
+            </div>
+            <div>
+              <strong>响应 SLA</strong>
+              <p class="bilingual"><span>1 小时内初次响应，重大情况即时视频连线。</span><span class="en">Initial response within 1h; urgent calls trigger immediate video bridge.</span></p>
+            </div>
+          </div>
+          <div class="service-deliverables">
+            <div class="pill">家庭指挥盘 · Family Command</div>
+            <div class="pill">专家二次意见 · Second Opinion</div>
+            <div class="pill">专项体检策划 · Specialty Check-up</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-block" id="tier-c">
+        <div class="service-media" data-parallax="0.04">
+          <img src="https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?auto=format&fit=crop&w=1200&q=80&fm=webp" alt="VIP 会籍服务配图" loading="lazy">
+        </div>
+        <div class="service-details">
+          <span class="badge">年度会员｜Tier C</span>
+          <h3>高净值 VIP 会籍（受邀加入） <small>价格面议</small></h3>
+          <p class="bilingual">
+            <span>为极高复杂度家庭或企业家提供医疗陪伴、专家委员会、跨境资产与健康规划协同。</span>
+            <span class="en">Invite-only for complex families with a chief medical officer, expert council, and asset-health integration.</span>
+          </p>
+          <div class="service-meta">
+            <div>
+              <strong>包含项目｜Scope</strong>
+              <p class="bilingual"><span>专属首席医疗官、国际专家网络、定制健康仪表盘、年度闭门汇报。</span><span class="en">Dedicated CMO, international network, bespoke dashboards, annual closed-door summits.</span></p>
+            </div>
+            <div>
+              <strong>交付物｜Outputs</strong>
+              <p class="bilingual"><span>家庭健康宪章、绿色通道配额、危机响应演练。</span><span class="en">Family health charter, priority lanes, crisis playbooks.</span></p>
+            </div>
+            <div>
+              <strong>响应 SLA</strong>
+              <p class="bilingual"><span>7×24 实时支持，1 小时内安排团队到场。</span><span class="en">Always-on response with onsite team within 1 hour.</span></p>
+            </div>
+          </div>
+          <div class="service-deliverables">
+            <div class="pill">首席医疗官 · Chief Medical Officer</div>
+            <div class="pill">绿色通道配额 · Fast Track Slots</div>
+            <div class="pill">危机演练 · Crisis Simulation</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-boundary reveal">
+      <h3>服务边界与合规声明</h3>
+      <ul>
+        <li class="bilingual"><span>嫩芽健康不替代医院诊疗，不承诺疗效；医疗决定由执业医生与客户共同确认。</span><span class="en">Nenya Health does not diagnose or promise outcomes; decisions stay with licensed physicians and clients.</span></li>
+        <li class="bilingual"><span>我们遵守两地医疗法规与隐私要求，所有沟通默认留痕并加密存储。</span><span class="en">We comply with HK & SZ medical regulations and log/encrypt all communication.</span></li>
+        <li class="bilingual"><span>紧急或生命威胁情况请直接拨打 999 / 120 或前往最近急症室。</span><span class="en">In emergencies, call 999 / 120 or go to the nearest emergency room immediately.</span></li>
+      </ul>
+    </section>
+
+    <section class="cta-panel reveal">
       <div>
-        <h3 data-i18n="contactStripTitle">扫码添加「嫩芽健康」｜预约私密沟通</h3>
-        <p class="meta" data-i18n="contactStripDesc">联络入口始终开放，所有沟通以隐私与合规为前提。</p>
+        <span class="badge">准备好下一步了吗？</span>
+        <p class="bilingual">
+          <span>告诉我们您正在经历的健康事件或年度规划，我们将在 12 小时内安排顾问一对一沟通，确认适合的服务组合与团队配置。</span>
+          <span class="en">Share your current situation or annual plan—we will arrange a confidential advisor call within 12 hours.</span>
+        </p>
       </div>
-      <div class="contact-strip-actions">
-        <a class="btn-primary" href="./about.html#contact" data-i18n="contactStripCTA">前往联系页</a>
-      </div>
-      <div class="qrcode">
-        <img src="./assets/qrcode.svg" alt="二维码" />
-      </div>
-    </div>
+      <a class="btn btn-primary" href="./about.html#contact">预约私密沟通</a>
+    </section>
   </main>
 
-  <script src="./script.js?v=20251218-1"></script>
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <img src="./assets/logo-nenya.svg" alt="Nenya Health logo">
+        <p>嫩芽健康 · Nenya Health<br>Cross-border Health Concierge between Hong Kong & Shenzhen.</p>
+      </div>
+      <div>
+        <strong>页面</strong>
+        <ul>
+          <li><a href="./index.html">首页 Home</a></li>
+          <li><a href="./services.html">服务 Services</a></li>
+          <li><a href="./about.html">关于 About</a></li>
+        </ul>
+      </div>
+      <div>
+        <strong>联系</strong>
+        <ul>
+          <li>hello@nenya.health</li>
+          <li>WhatsApp +852 5123 6608</li>
+          <li>WeChat｜扫码二维码</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <div class="floating-contact" data-contact>
+    <button type="button">WhatsApp / 微信</button>
+    <div class="floating-card">
+      <p><strong>WhatsApp</strong><br>+852 5123 6608</p>
+      <p><strong>WeChat</strong><br>扫描二维码添加：嫩芽健康</p>
+    </div>
+  </div>
+
+  <script src="./script.js?v=20240218"></script>
 </body>
 </html>

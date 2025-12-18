@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="陪诊协同 icon">
+  <g fill="none" stroke="#0c7c83" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 36 L20 44 C22 46 26 46 28 44 L34 38"/>
+    <path d="M52 36 L44 44 C42 46 38 46 36 44 L30 38"/>
+    <path d="M18 24 C18 20 21 16 26 16 C31 16 34 20 34 24 C34 26 33 28 32 30"/>
+    <path d="M46 24 C46 20 43 16 38 16 C34 16 30 19 30 23 C30 25 31 28 32 30"/>
+    <rect x="14" y="30" width="36" height="16" rx="8" opacity="0.35"/>
+  </g>
+</svg>
